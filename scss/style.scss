@@ -1,0 +1,130 @@
+
+$colorbg: #eb92b7;
+$colorbg2: #f682b5;
+$colorFuente1:rgb(180, 64, 109);
+
+@mixin fuentePrincipal {
+    font-family: 'roboto';
+    font-size: 1.2 rem;
+}
+@mixin titulos ($family, $size, $weight, $color){
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+#foodies {
+    height: 550px;
+    width: 650px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+p{
+    @include fuentePrincipal;
+    font-style: italic;
+}
+
+h4{
+@include titulos('montserrat', 1.8rem, 800, $colorFuente1);
+}
+
+
+
+#navbar {
+    background-color: $colorbg2;
+}
+
+#separacion {
+    background-color:$colorbg;
+}
+
+#separacion::after {
+    content: "";
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+#gracias {
+    background-color: $colorbg2 ;
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    box-shadow: 0 0 10px;
+}
+
+.card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2%;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
+}
+
+.card-text{
+    @include fuentePrincipal;
+}
+
+.card-cocina{
+    display: flex !important;
+    }
+#destacados {
+    background: white;
+    background: url(../imgs/background.jpg);
+    
+}
+
+.contacto {
+    background-color: pink;
+}
+
+.form {
+    /* width: 450px; */
+    margin: auto;
+    padding: 10px 20px;
+   
+    margin-top: 20px;
+
+}
+
+h2 {
+    color: #d84ca9 ;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+ input, textarea {
+     width: 100%;
+     margin-bottom: 20px;
+     padding: 7px;
+ }
+
+
+
+body{
+    background-color: $colorbg;
+}
+
+h1{
+    color: rgb(218, 105, 161);
+    background-color: $colorbg;
+}
+
+
+
+

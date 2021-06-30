@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box; }
+
+/* #cocina {
+  
+  display: flex;
+  justify-content: space-evenly; } */
+
+#navbar {
+  background-color: #f682b5; }
+
+#separacion {
+  background-color: #eb92b7; }
+
+#separacion::after {
+  content: "";
+  background-color: transparent;
+  display: block;
+  height: 20px;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  left: auto;
+  margin-top: -40px; }
+
+#gracias {
+  background-color: #f682b5;
+  position: relative;
+  margin-top: -20px;
+  z-index: 10;
+  box-shadow: 0 0 10px; }
+
+.card-border {
+  border: solid 10px white;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all ease-out 0.2%; }
+
+.card-border:hover {
+  transform: scale(1.05); }
+
+#destacados {
+  background: white;
+  background: url(../imgs/background.jpg); }
+
+.contacto {
+  background-color: pink; }
+
+.form {
+  /* width: 450px; */
+  margin: auto;
+  padding: 10px 20px;
+  margin-top: 20px; }
+
+h2 {
+  color: #d84ca9;
+  text-align: center;
+  margin: 0%;
+  font-size: 30px;
+  margin-bottom: 20px; }
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px; }
+
+body {
+  background-color: #eb92b7; }
+
+h1 {
+  color: #da69a1;
+  background-color: #eb92b7; }
