@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 p {
   font-family: 'roboto';
@@ -20,8 +21,12 @@ h4 {
   display: flex;
   justify-content: space-evenly; }
 
+/*Navbar*/
+
 #navbar {
   background-color: #f682b5; }
+
+/*Separacion*/
 
 #separacion {
   background-color: #eb92b7; }
@@ -44,6 +49,8 @@ h4 {
   z-index: 10;
   box-shadow: 0 0 10px; }
 
+/* Destacados */
+
 .card-border {
   border: solid 10px white;
   border-radius: 20px;
@@ -61,11 +68,12 @@ h4 {
   background: white;
   background: url(../imgs/background.jpg); }
 
+  /*Contacto*/
+
 .contacto {
   background-color: pink; }
 
 .form {
-  /* width: 450px; */
   margin: auto;
   padding: 10px 20px;
   margin-top: 20px; }
@@ -83,8 +91,36 @@ input, textarea {
   padding: 7px; }
 
 body {
-  background-color: #eb92b7; }
+  background-color: #eb92b7; 
+  height: 100vh;
+}
 
 h1 {
   color: #da69a1;
   background-color: #eb92b7; }
+
+/* Footer */
+
+.container-body {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.instagram {
+  width: 25% ;
+}
+
+.facebook {
+  width: 25%;
+}
+
+.YouTube {
+  width: 25%;
+}
+
+.Twitter {
+  width: 25%;
+}
+
