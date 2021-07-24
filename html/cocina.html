@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-     <link rel="stylesheet" href="../css/prueba.css">
      <link rel="stylesheet" href="../css/style.css">
      <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -20,12 +19,12 @@ todas las dificultades">
 <title>Itadakimasu - Cultura culinaria asiática</title>
 </head>
 
-<body>
+<body class="cuerpo">
     <!--Navbar-->
     <nav id="navbar" class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
             <a class="navbar-logo" href=".">
-                <img src="../imgs/logo.jpg" alt="">
+                <img id="logo" src="../imgs/logo (2).png" alt="">
             </a>
                 <button class="navbar-toggler"
                 type="button" 
@@ -42,9 +41,8 @@ todas las dificultades">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>   
-                    <li class="nav-item"><a class="nav-link" href="./html/cocina.html">Cocina</a></li>    
+                    <li class="nav-item"><a class="nav-link" href="#">Cocina</a></li>    
                     <li class="nav-item"><a class="nav-link"  href="reviews.html">Reviews</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>   
                 </ul>
             </div>
         </div>
@@ -52,85 +50,74 @@ todas las dificultades">
 
 
     <!--Inicio-->
-    <div id="cocina">
-        <div class="container-fluid">
-                <h4 class="text-center"></h4>
-                <div class="row" id="cards">
-                    <div class="col-12 col-md-6">
-                        <div class="row card-border mb-5 bg-light mx-1">
-                                <img class="img-fluid col-5 px-0" id="foodies" src="../imgs/taiyaki.jpg" alt="Card image cap">
-                                <div class="card-body col-7">
-                                    <h5 class="card-title">Taiyaki</h5> 
-                                    <p>El taiyaki es un pastel con forma de pez. Suele ser relleno con pasta de judías dulces, pero como a nadie le gusta eso te muestro otros rellenos
-                                        
+    
 
-                                    </p>  
-                                </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="row card-border mb-5 bg-light mx-1">
-                                <img class="img-fluid col-5 px-0" id="foodies" src="../imgs/mooncakes.jpg" alt="Card image cap">
-                                <div class="card-body col-7">
-                                    <h5 class="card-title">Mooncakes</h5> 
-                                    <p>El mooncake (pastel lunar) se consume en China en la fiesta del medio otoño, la cual se centra alrededor de la luna. </p>  
-                                </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row" id="cards">
-
-                    <div class="col-12 col-md-6">
-                        <div class="row card-border mb-5 bg-light mx-1">
-                                <img class="img-fluid col-5 px-0" id="foodies" src="../imgs/tonkatsu.jpg" alt="Card image cap">
-                                <div class="card-body col-7">
-                                    <h5 class="card-title">Tonkatsu</h5> 
-                                    <p>Podríamos llamar al tonkatsu una especie de milanesa japonesa. Cerdo empanado en panko y frita, así de simple.</p>  
-                                </div>
-                        </div>
-                    </div>
-
-                </div>
-
+    <section class="py-5">
+        <div class="container text-center">
+          <div>
+            <div class="row align-items-center text-md-left mb-5">
+              <div class="col-md-6 order-1 order-md-0">
+                <img class="img-fluid" id="foodies" src="../imgs/taiyaki.jpg" alt="taiyaki">
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <span class="display-3 mb-2">Taiyaki</span>
+                <h3 class="mb-4">Dificultad media</h3>
+                <p>El taiyaki es un pastel con forma de pez. Suele ser relleno con pasta de judías dulces, pero como a nadie le gusta eso te muestro otros rellenos. <a href="https://www.youtube.com/watch?v=OUxTAobs2ng">Receta acá</a></p>
+              </div>
+            </div>
+            <div class="row align-items-center text-md-right mb-5">
+              <div class="col-md-6 order-1">
+                <img class="img-fluid" src="../imgs/dango.jpg" alt="dango dulce japones">
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0 order-0">
+                <span class="display-3 mb-2">Dango</span>
+                <h3 class="mb-4">Dificultad baja</h3>
+                <p>El dango es un dulce derivado del mochi, muy reconocido por su influencia en la cultura pop japonesa. <a href="https://www.youtube.com/watch?v=dn7mmeJc8eg">Mira la receta ahora!</a></p>
+              </div>
+            </div>
+            <div class="row align-items-center text-md-left mb-5">
+              <div class="col-md-6 order-1 order-md-0">
+                <img class="img-fluid" src="../imgs/omurice.jpg" alt="omurice, omelette con arroz">
+              </div>
+              <div class="col-md-6 mb-4 mb-md-0">
+                <span class="display-3 mb-2">Omurice</span>
+                <h3 class="mb-4">Dificultad baja</h3>
+                <p> Su nombre viene de omelette y rice (arroz), y su origen puede ser tanto coreano como japonés. Consta de una
+                    tortilla hecha con arroz frito, y es muy popular debido a su practicidad. <a href="https://www.youtube.com/watch?v=SizW_-K5Rwo">Receta.</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </div>
-
-
+      </section>
+    
     <!--Footer con redes--> 
     <footer>
-        <div class="container-completo">
-            <div class="container-body">
-                <div class="fila redes">
+        <!--Footer con redes--> 
+            <div class="container-completo">
+                <div class="container-body m-4 px-5">
                     <div class="instagram">
-                        <img src="imgs/Instagram logo.png">
-                        <label>@itadakimasuarg</label>
+                        <a href="https://www.instagram.com"><img src="../imgs/Instagram logo.png"></a> 
                     </div>
                     <div class="facebook">
-                        <img src="imgs/Facebook logo.png">
-                        <label> fb.com/itadakimasuarg</label>
+                            <a href="https://www.facebook.com/"><img src="../imgs/Facebook logo.png"></a>
                     </div>
                     <div class="YouTube">
-                        <img src="imgs/Youtube logo.png">
-                        <label>youtube.com/itadakimasuarg</label>
+                        <a href="https://youtube.com"><img src="../imgs/Youtube logo.png"></a>
                     </div>
                     <div class="Twitter">
-                        <img src="imgs/Twitter logo.png">
-                        <label>@itadakimasuarg</label>
+                        <a href="https://www.twitter.com"><img src="../imgs/Twitter logo.png"></a>
                     </div>
-                    
+                
                 </div>
-            </div>
     
-    <!-- Footer con copyright -->
-            <div class="container-footer">
-                <div class="copyright">
-                    © 2021 Todos los Derechos Reservados
+                <!-- Footer con copyright -->
+                <div class="container-footer">
+                    <div class="copyright">
+                        © 2021 Todos los Derechos Reservados
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
